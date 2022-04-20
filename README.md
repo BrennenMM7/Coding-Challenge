@@ -39,8 +39,8 @@ cat "sampleData\moby.txt" | python .\src\CodeChallenge.py
 ```
 
 Output:
-```bash
-$cat "sampleData\moby.txt" | python .\src\CodeChallenge.py
+```
+cat "sampleData\moby.txt" | python .\src\CodeChallenge.py
 ----------------Results for "Terminal Input"-------------------
 the sperm whale  -  84
 the white whale  -  71
@@ -146,7 +146,20 @@ the top of  -  14
 ```
 
 ## Running Tests
+The Python testing module exsists within the same directory as the main module. The testing module is dependent on the "sampleData\testingSample.txt" file to check definition functions. 
+
+```bash
+#Run application with single file argument
+python .\src\test_CodeChallenge.py
+```
 
 ## What would you do next, given more time 
+- In its current state the application is processing a single file everytime even if multiple arguments are provided on input. Importing a multithreading module and incorporating using a differrent thread for each file input would greatly increase speed.
+
+- Add a different argument to accept file directory paths as a whole instead of manually adding each file argument.  
+
+- Add dyanmicly generated sample text for the testing modules to ensure each function operating for variablity of data. 
 
 ## Known Bugs/Issues
+- No real known bugs currently found. Only if a word line ends in the middle of the letters on reading the file will it split into two seperate words.
+    Example: This is an exa\nmple.  
