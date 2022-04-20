@@ -1,5 +1,4 @@
 import unittest
-import sys
 import CodeChallenge
 from os import path
 
