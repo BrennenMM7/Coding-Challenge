@@ -149,7 +149,7 @@ the top of  -  14
 The Python testing module exsists within the same directory as the main module. The testing module is dependent on the "sampleData\testingSample.txt" file to check definition functions. 
 
 ```bash
-#Run application with single file argument
+#Run testing python module. 
 python .\src\test_CodeChallenge.py
 ```
 
